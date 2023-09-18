@@ -1,0 +1,78 @@
+:root {
+    --mainColor: linear-gradient(to right, #ba5370, #f4e2d8);
+  }
+  
+  .header {
+    background: var(--mainColor); /* Use the gradient background */
+    color: white; /* Set text color to white */
+  }
+  
+  .container {
+    width: 100%;
+    background-color: #406ca7;
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  .container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px;
+    padding: 5em 0;
+  }
+  
+  .list {
+    display: flex;
+    list-style: none; /* Remove default list styles */
+  }
+  
+  .listItem {
+    margin-left: 2em;
+    color: rgb(111, 155, 158);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  /* Style the active link */
+  .activeItem {
+    color: purple;
+    border-bottom: 2px solid #1b1515; /* Use solid line for active link */
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .container-flex {
+      flex-direction: column;
+      align-items: center; /* Center items vertically */
+    }
+    .logo {
+      width: 150px; /* Adjust logo size */
+    }
+  }
+  
+  @media screen and (max-width: 568px) {
+    html {
+      font-size: 14px; /* Further reduce font size for smaller screens */
+    }
+    .list {
+      flex-direction: column;
+      align-items: center; /* Center list items vertically */
+    }
+    .listItem {
+      margin-top: 0.2em;
+      margin-left: 0; /* Center list items horizontally */
+    }
+    .logo {
+      width: 100px; /* Adjust logo size */
+    }
+  }
+  
